@@ -117,7 +117,7 @@ body{
 	box-sizing: border-box;
 	justify-content:space-between;
 }
-.section img{
+.feature img{
 	width: 100%;
 	height: 65%;
 	border-radius: 10px;
@@ -132,32 +132,45 @@ body{
 }
 .feature p{
 	text-wrap: wrap;
-	margin-top: 15px;
+	margin-top: 10px;
 	text-align: center;
 }
 .feature h1{
 	margin-top: 10px;
 	text-align: center;
+	font-size: 25px;
+	font-weight: 800;
 }
-.contact{
+.about{
 	width: 100%;
-	height: 300px;
-	display: grid;
-	place-items: center;
-	margin-top: 30px;
+	height: 50vh;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
 	padding: 15px;
 	background: rgb(230, 159, 29);
 }
+.div h1{
+	text-align: center;
+	font-weight: 800;
+	margin: 20px;
+}
 .text{
-	margin-top: 10px;
-	width: 70%;
-	height: 23vh;
+	width: 50%;
+	height: 50%;
+	margin-top: 15px;
+	align-items: center;
 	padding: 10px;
 	border-radius: 15px;
 	background: whitesmoke;
 	box-sizing: border-box;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 20px;
+	overflow: scroll;
+	
 }
 .text h3{
 	text-align: center;	
@@ -167,12 +180,9 @@ body{
 	text-wrap: wrap;
 	text-align: center;
 	font-family: Georgia;
+	font-size: 20px;
+}
 
-}
-.contact h1{
-	text-align: center;
-	font-weight: 800;
-}
 .icons{
 	display: flex;
 	justify-content: center;
@@ -193,7 +203,19 @@ body{
 }
 .year h3{
 	text-align: center;
-	bottom: 1;
+	font-size: 15px;
+}
+
+.year{
+	bottom: 2;
+	margin-bottom: 10px;
+	padding: 20px;
+}
+
+#contact{
+	text-align: center;
+	font-weight: light;
+	margin-top: 20px;
 }
 @media(max-width: 1080px) {
 	.text p{
@@ -233,10 +255,6 @@ body{
 	.home-content{
 		max-width: 300px;
 	}
-	.contact{
-		bottom: 40px;
-		width: 150px;
-	}
 	.button{
 		height: 25px;
 		width: 70px;
@@ -252,35 +270,43 @@ body{
 	}
 	.section img{
 		width: 100%;
-		height: 70%;
-
 	}
 	.feature{
 		margin-bottom: 20px;
 		margin-left: 10%;
 		width: 80%;
-		height: 60vh;
+		height: 50vh;
 	}
-	.contact{
+	.feature h1{
+		font-size: 15px;
+		font-weight: 1000;
+	}
+	.feature p{
+		height: auto;
+	}
+	.about{
 		width: 80%;
 		display: flex;
 		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 		margin-left: 10%;
-		height: 40vh;
 		border-radius: 20px;
 		padding: 10px;
-
 	}
-	.contact h1{
+	.text{
+		width: 100%;
+		height: inherit;
+		word-wrap: break-word;
+		overflow-wrap: break-word;
+	}
+	.about h1{
 		font-weight: 700;
 		font-size: 20px;
 		margin-bottom: 2px;
 	}
-	.text{
-		width: 100%;
-		word-wrap: break-word;
-		height: 45vh;
-		overflow-wrap: break-word;
+	.text h3{
+		font-size: 15px;
 	}
 	.text p{
 		font-size: 15px;
@@ -289,4 +315,20 @@ body{
 		gap: 20px;
 	}
 		
+ }
+ @media(max-width: 360px){
+	.text{
+		height: 80%;
+		overflow: scroll;
+	}
+	.text p{
+		font-size: 10px;
+	}
+	.div{
+		margin-top: 0;
+	}
+	.feature p{
+		font-size: 10px;
+	}
+
  }
