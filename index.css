@@ -47,7 +47,7 @@ body{
 	background-position: cover;
 	background-size: cover;
 	position: relative;
-	transition: ease-out 10s;
+	transition: ease-out 5s;
 }
 .home-content{
 	max-width: 600px;
@@ -256,13 +256,16 @@ body{
 		max-width: 300px;
 	}
 	.button{
-		height: 25px;
-		width: 70px;
+		height: 30px;
+		width: 80px;
+		
 	}
 	.button a{
 		margin-top: 0;
 		font-size: 15px;
 		font-size: 10px;
+		padding: 15pxs;
+		
 	}
 	.section{
 		display: flex;
